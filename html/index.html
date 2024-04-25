@@ -20,27 +20,23 @@
       display: block;
       color: yellow;
     }
-
-    .mybuttons {
+    .mybuttons{
       display: flex;
       flex-direction: column;
       align-content: space-around;
       justify-content: space-around;
     }
-
-    .mydivanchor {
+    .mydivanchor{
       display: block;
       text-align: center;
-      padding: 30px;
-      background-color: orange;
+      padding:30px;
+      background-color:orange;
       font-size: large;
       text-decoration: none;
       border-radius: 5px;
       margin: 50px;
-      justify-content: center;
-
+      
     }
-
     .myul {
       list-style: none;
       padding: 0px;
@@ -66,7 +62,25 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-         <h4 class="justify-content-end text-white">Customer Management</h4>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Employee
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Sing In</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Customer
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Sign In</a></li>
+              <li><a class="dropdown-item" href="#">Sign Up</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -83,8 +97,12 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="../images/banking9.jpg" class="d-block w-100" height="550rem">
+              <img src="images/banking4.jpg" class="d-block w-100" height="450rem">
             </div>
+            <div class="carousel-item">
+              <img src="images/banking5.png" class="d-block w-100" height="450rem">
+            </div>
+
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
@@ -98,23 +116,48 @@
           </button>
         </div>
       </div>
-      <div class="col-4 ">
-        
+      <div class="col-4">
         <div class="mybuttons">
           <div>
-            <a class="mydivanchor" href="managecustomeres.html"><b>Customer</b></a>
-          </div>
-          <div>
-            <a class="mydivanchor" href="manageAccounts.html"><b>Account</b></a>
-          </div>
-          <div>
-            <a class="mydivanchor" href="manageLoans.html"><b>Loan</b></a>
-          </div>
+          <a class="mydivanchor" href="employee.html"><b>Employee Login</b></a>
+        </div>
+        <div>
+          <a class="mydivanchor" href="customer.html"><b>Customer Login</b></a>
+        </div>
         </div>
       </div>
     </div>
-    
   </div>
+  <footer>
+    <div class="container-fluid mt-3" style="background-color:rgb(61, 108, 184);">
+      <div class="row justify-content-around">
+
+        <div class="col-2">
+          <div>
+            <h5 style="color: yellow;">Quick Links</h5>
+            <ul class="myul" style="font-size: large;">
+              <li><a class="myanchor" href="#">Fixed Deposite</a></li>
+              <li><a class="myanchor" href="#">Home Loan</a></li>
+              <li><a class="myanchor" href="#">Education Loan</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div>
+            <h5 style="color: yellow;">Contact Us</h5>
+            <ul class="myul" style="font-size: large;">
+              <li><a class="myanchor" href="#">Helpline Number</a></li>
+              <li><a class="myanchor" href="#">Bank Deposite Centers</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+  </footer>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
